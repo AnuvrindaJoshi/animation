@@ -1,0 +1,50 @@
+body{
+    margin-top: 60px;
+    overflow-y: hidden;
+    background:linear-gradient(lightblue, purple);
+}
+.night{
+    height:500px;
+    width:1000px;
+    margin:  auto;
+    background-image: url(./pics/Img_1.png);
+    position: relative;
+    box-shadow: 5px 5px 60px grey;
+    overflow-x: hidden;
+}
+
+.road{
+    background-image: url(./pics/Img_02.png);
+    height: 200px;
+    display: block;
+    margin-top: 300px;
+    background-repeat: repeat-x;
+    left: 0px;
+}
+.car{
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+}
+.carmoving{
+    animation: moving 6s linear infinite;
+}
+button{
+    height:20px;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    color: pink;
+    background-color: black;
+    box-shadow: 1px 1px 20px purple;
+    border-radius: 5px;
+}
+
+@keyframes moving{
+    100%{
+        transform: translateX(700px);
+    }
+}
+
